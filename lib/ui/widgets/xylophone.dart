@@ -20,35 +20,45 @@ class _XylophoneState extends State<Xylophone> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.sizeOf(context);
+    final height = size.height * 0.11;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         XylophoneButton(
           color: Colors.red,
+          height: height,
           playSound: () => playSound(1),
         ),
         XylophoneButton(
           color: Colors.orange,
+          height: height,
           playSound: () => playSound(2),
         ),
         XylophoneButton(
           color: Colors.yellow,
+          height: height,
           playSound: () => playSound(3),
         ),
         XylophoneButton(
           color: Colors.green,
+          height: height,
           playSound: () => playSound(3),
         ),
         XylophoneButton(
           color: Colors.teal,
+          height: height,
           playSound: () => playSound(5),
         ),
         XylophoneButton(
           color: Colors.blue,
+          height: height,
           playSound: () => playSound(6),
         ),
         XylophoneButton(
           color: Colors.purple,
+          height: height,
           playSound: () => playSound(7),
         ),
       ],

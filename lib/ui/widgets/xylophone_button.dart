@@ -4,11 +4,13 @@ import 'package:marimba_app/ui/widgets/oval_painter.dart';
 class XylophoneButton extends StatefulWidget {
   const XylophoneButton({
     required this.color,
+    required this.height,
     required this.playSound,
     super.key,
   });
 
   final Color color;
+  final double height;
   final void Function() playSound;
 
   @override
@@ -27,7 +29,7 @@ class _XylophoneButtonState extends State<XylophoneButton>
     super.initState();
     final scaleTween = Tween<double>(begin: 1, end: 0.95);
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 100),
+      duration: const Duration(milliseconds: 130),
       vsync: this,
     );
     _animation = scaleTween.animate(
@@ -48,7 +50,7 @@ class _XylophoneButtonState extends State<XylophoneButton>
       child: ScaleTransition(
         scale: _animation,
         child: Container(
-          height: 80,
+          height: widget.height,
           margin: const EdgeInsets.only(bottom: 8),
           decoration: BoxDecoration(
             color: widget.color,

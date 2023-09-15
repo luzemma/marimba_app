@@ -19,7 +19,7 @@ class XylophoneScreen extends StatelessWidget {
             ),
             const Positioned.fill(
               child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Xylophone(),
               ),
             ),
