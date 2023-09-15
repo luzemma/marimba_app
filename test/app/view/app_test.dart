@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:marimba_app/app/app.dart';
-import 'package:marimba_app/xylophone/xylophone_screen.dart';
+import 'package:marimba_app/ui/app.dart';
+import 'package:marimba_app/ui/xylophone/xylophone_screen.dart';
 
 void main() {
   group('App', () {

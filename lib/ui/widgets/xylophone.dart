@@ -1,6 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:marimba_app/app/widgets/xylophone_button.dart';
+import 'package:marimba_app/ui/widgets/xylophone_button.dart';
 
 class Xylophone extends StatefulWidget {
   const Xylophone({super.key});

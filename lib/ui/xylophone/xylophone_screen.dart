@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marimba_app/app/widgets/xylophone.dart';
+import 'package:marimba_app/ui/widgets/xylophone.dart';
 
 class XylophoneScreen extends StatelessWidget {
   const XylophoneScreen({super.key});

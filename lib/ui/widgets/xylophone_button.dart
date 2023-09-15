@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marimba_app/app/widgets/oval_painter.dart';
+import 'package:marimba_app/ui/widgets/oval_painter.dart';
 
 class XylophoneButton extends StatefulWidget {
   const XylophoneButton({
